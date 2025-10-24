@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de login</title>
+  <link rel="stylesheet" href="../public/stylesheets/estilo.css">
  
 </head>
 <body>
+  <h1> Informa tuas credenciais</h1>
 
-  <form action="/login" method="POST">
-    <h1>Formulário de Acesso</h1>
-    
-    <input type="text" id="login" placeholder="Digite seu login" >
-    <input type="text" id="senha" placeholder="Digite sua senha" >
-    
+  <form action="usuarios/login" method="POST">
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="login" required><br><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required><br><br>
+
     <button type="submit">Enviar</button>
   </form>
 </body>
